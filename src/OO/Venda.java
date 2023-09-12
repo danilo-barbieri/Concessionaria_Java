@@ -6,11 +6,13 @@ public class Venda {
     private Date dataVenda;
     private Carro carroVendido;
     private Vendedor vendedor;
+    private int anoVenda;
 
-    public Venda(Carro carro, Vendedor vendedor) {
+    public Venda(Carro carro) {
         this.dataVenda = new Date();
         this.carroVendido = carro;
         this.vendedor = vendedor;
+        this.anoVenda = anoVenda;
     }
 
     public Date getDataVenda() {
@@ -23,6 +25,10 @@ public class Venda {
 
     public Vendedor getVendedor() {
         return vendedor;
+    }
+
+    public int getAnoVenda() {
+        return anoVenda;
     }
 }
 
